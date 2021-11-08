@@ -1,6 +1,6 @@
 let fs = require('fs')
-global.owner = ['6283128734012', '6288709645535'] // Letakan nomor kamu disini
-global.mods = [] // Moderator?
+global.owner = ['6289678391870', '6289678391870'] // Letakan nomor kamu disini
+global.mods = [081290014897] // Moderator?
 global.prems = JSON.parse(fs.readFileSync('./src/premium.json')) // Pengguna premium tidak memerlukan limit
 global.APIs = { // API Prefix
   // nama: 'https://website'
@@ -24,17 +24,17 @@ global.APIKeys = { // APIKey nya disini
   'https://hardianto-chan.herokuapp.com': 'hardianto',
   'https://neoxr-api.herokuapp.com': 'yntkts',
   'https://pencarikode.xyz': 'pais',
-  'https://api.xteam.xyz': 'apikeymu',
+  'https://api.xteam.xyz': 'cf6ab5c2c1bb1b5d',
   'https://zahirr-web.herokuapp.com': 'zahirgans',
-  'https://api.zeks.xyz': 'apivinz',
+  'https://api.zeks.xyz': 'agbot080304',
 }
 
 // Sticker WM
 global.packname = '❤️'
-global.author = 'ariffb'
+global.author = 'by Agbot^^'
 
 global.wait = '_*tunggu sedang di proses...*_'
-global.eror = '_*Server Error*_'
+global.eror = '_*Maaf kak Server Error^^*_'
 global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text='
 
 global.multiplier = 69 // Semakin tinggi, semakin sulit naik level
