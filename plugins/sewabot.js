@@ -2,8 +2,8 @@ let handler = async m => m.reply(`
 *「 LIST HARGA SEWA BOT 」*
 
 ❒ Sewa = _5k/grup (1 minggu)_
-❒ Sewa = _10k/grup (2 minggu)_
-❒ Sewa = _15k/grup (1 bulan)_
+❒ Sewa = _10k/grup (1 bulan)_
+❒ Sewa = _15k/grup (Permanent)_
 ❒ Free = _24 jam Bot Masuk Ke Group Kalian Setelah Itu Bot Akan Keluar_
 
 ◪ *PEMBAYARAN BISA MELALUI*
