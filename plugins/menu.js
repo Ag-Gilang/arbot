@@ -6,27 +6,35 @@ let fetch = require('node-fetch')
 let moment = require('moment-timezone')
 const defaultMenu = {
   before: `
-┌─〔 %me 〕
-├ Hai, %name!
-│
-├ Tersisa *%limit Limit*
-├ Role *%role*
-├ Level *%level (%exp / %maxexp)* [%xp4levelup]
-├ %totalexp XP secara Total
+┌◪  *「im %me 」*
+│ │ 
+│ ├❒*Hai  : %name!*
+│ ├❒*limit : %limit Limit*
+│ ├❒*Role : %role*
+│ ├❒*Level: %level (%exp / %maxexp)* 
+│ └❒*Total Xp : %totalexp*
 │ 
-├ Tanggal: *%week %weton, %date*
-├ Tanggal Islam: *%dateIslamic*
-├ Waktu: *%time*
+├◪ *TIME ⏳*
+│ ├❒*Hari: %week %weton*
+│ ├❒*Tanggal : %date*
+│ └❒*Waktu: %time*
 │
-├ Uptime: *%uptime (%muptime)*
-├ Database: %rtotalreg dari %totalreg
-├ Github:
-├ %github
-└────
+├◪ *STATUS BOT*
+│ ├❒*Uptime: %uptime (%muptime)*
+│ ├❒*Database: %rtotalreg of %totalreg*
+│ └❒*Github: %github*
+│
+├◪ *INFO OWNER BOT*
+││
+│├❒ wa.me/6289678391870
+│├❒ *tele owner : @aryagilangg*
+│├❒ *Ig owner : @_aryagilang*
+│└❒ _*© Aryagilang*_
+└───────────────────────
 %readmore`.trimStart(),
-  header: '┌─〔 %category 〕',
-  body: '├ %cmd %islimit %isPremium',
-  footer: '└────\n',
+  header: '┌──*「 ```%category``` 」*──',
+  body:  '├◪ *%cmd%islimit%isPremium*',
+  footer: '└───────────────────────',
   after: `
 *%npmname@^%version*
 ${'```%npmdesc```'}
@@ -189,7 +197,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       return conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
         "listMessage": {
           "title": `${ucapan()}, ${name}`.trim(),
-          "description": "© stikerin",
+          "description": "© Agbot",
           "buttonText": "Klik Disini",
           "listType": "SINGLE_SELECT",
           "sections": [
@@ -377,7 +385,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    await conn.send2ButtonLoc(m.chat, await (await fetch(fla + teks)).buffer(), text.trim(), 'made with ❤️ by ariffb', 'Pemilik Bot', `${_p}owner`, 'Donasi', `${_p}donasi`, m)
+    await conn.send2ButtonLoc(m.chat, await (await fetch(fla + teks)).buffer(), text.trim(), 'made with ❤️ by Arya gilang', 'Pemilik Bot', `${_p}owner`, 'Donasi', `${_p}donasi`, m)
   } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
     throw e
