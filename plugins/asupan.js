@@ -10,6 +10,8 @@ arr = txt.split`\n`
 }
 handler.help = ['asupan']
 handler.tags = ['fun']
+handler.premium = true
+handler.owner = false
 handler.command = /^(asupan)$/i
 
 module.exports = handler
