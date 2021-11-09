@@ -22,7 +22,7 @@ const defaultMenu = {
 ├◪ *STATUS BOT*
 │ ├❒*Uptime: %uptime (%muptime)*
 │ ├❒*Database: %rtotalreg of %totalreg*
-│ └❒*Github: %github*
+│ └❒*Status: Jomblo ka hehe^^*
 │
 ├◪ *INFO OWNER BOT*
 ││
