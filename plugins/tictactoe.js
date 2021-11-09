@@ -43,7 +43,7 @@ Ketik *nyerah* untuk nyerah
                     mentionedJid: conn.parseMention(str)
                 }
             })
-            await conn.sendButton(room.o, str, '© stikerin', 'Nyerah', 'nyerah', m, {
+            await conn.sendButton(room.o, str, '© Agbot', 'Nyerah', 'nyerah', m, {
                 contextInfo: {
                     mentionedJid: conn.parseMention(str)
                 }
