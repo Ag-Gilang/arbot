@@ -5,8 +5,6 @@ let handler = async m => m.reply(`
 ➤ Call/VC Bot Auto Block.
 ➤ Jangan Call/VC Bot Kalau Tidak aktif.
 ➤ Bot tidak aktif 24 jam, jadi tergantung kalau ownernya lagi ada waktu botnya juga on.
-*Konsekuensi Bila Melanggar Rules*
-Bot Akan Memblokir Kamu Atau Keluar Dari Grup Yang Kamu Kelola. 
 
 ━━━━━━━[ *PENTING!* ]━━━━━━━━
 *➤ Bot tidak menyimpan gambar, video,  audio, dan dokumen yang anda kirim*
@@ -14,6 +12,9 @@ Bot Akan Memblokir Kamu Atau Keluar Dari Grup Yang Kamu Kelola.
 *➤ Jika menemukan Bug/Error silahkan langsung lapor ke Owner bot*
 *➤ Jika kamu menelpon bot Dan di block, Owner Tidak Bertanggung Jawab*
 ━━━━━━━━━━━━━━━━━━━━━━━━
+
+*Konsekuensi Bila Melanggar Rules*:
+Bot Akan Memblokir Kamu Atau Keluar Dari Grup Yang Kamu Kelola!. 
 `.trim()) // ini rules Agbot
 
 handler.help = ['rules']
