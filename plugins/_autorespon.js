@@ -43,12 +43,6 @@ https://wa.me/6289678391870
     if (isSalam && !m.fromMe) {
         m.reply(`وَعَلَيْكُمْ السَّلاَمُ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ\n_wa\'alaikumussalam wr.wb._`)
     }
-    // salam
-    let reg = /(p|hi|hai|halo|hola|bot)/i
-    let isSalam = reg.exec(m.text)
-    if (isSalam && !m.fromMe) {
-        m.reply(`Ya, ada yang bisa saya bantu? kalo bingung ketik #menu ya kak`)
-    }
 
     // backup db
     if (setting.backup) {
