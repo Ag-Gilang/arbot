@@ -196,8 +196,8 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     if (teks == '404') {
       return conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
         "listMessage": {
-          "title": `${ucapan()}, ${name}. Berikut Menu Dari Ag Bot^^`.trim(),
-          "description": "\nJika button tidak terlihat ketik #allmenu untuk melihat semua pitur^^\n\n© Agbot",
+          "title": `Hai ${ucapan()}, ${name}. Berikut Menu Yang tersedia Dari Ag Bot^^ \nJika button tidak terlihat ketik #allmenu untuk melihat semua pitur^^\n\n`.trim(),
+          "description": "© Agbot",
           "buttonText": "Klik Disini",
           "listType": "SINGLE_SELECT",
           "sections": [
@@ -308,7 +308,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
         }
       }, {}), { waitForAck: true })
     }
-    // gunakan ini jika kamu menggunakan whatsapp bisnis
+    // gunakan ini jika kamu menggunakan whatsapp bisnis/Mod
     //   throw `
     // ┌〔 DAFTAR MENU 〕
     // ├ ${_p + command} all
