@@ -43,10 +43,10 @@ https://wa.me/6289678391870
     if (isSalam && !m.fromMe) {
         m.reply(`وَعَلَيْكُمْ السَّلاَمُ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ\n_wa\'alaikumussalam wr.wb._`)
     }
-    // salim
+    // salam
     let reg = /(p|hi|hai|halo|hola|bot)/i
-    let isSalim = reg.exec(m.text)
-    if (isSalim && !m.fromMe) {
+    let isSalam = reg.exec(m.text)
+    if (isSalam && !m.fromMe) {
         m.reply(`Ya, ada yang bisa saya bantu? kalo bingung ketik #menu ya kak`)
     }
 
