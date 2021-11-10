@@ -30,7 +30,7 @@ handler.all = async function (m, { isBlocked }) {
         this.sendButton(m.chat, `┌〔 Undang Bot ke Grup 〕
 ├ 24 jam / Free
 ├ 7 Hari / Rp 5,000
-├ 30 Hari / Rp 10,000
+├ Permanent / Rp 10,000
 └────
 
 https://wa.me/6289678391870
