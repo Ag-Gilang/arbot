@@ -8,21 +8,21 @@ const defaultMenu = {
   before: `
 ┌◪  *「im %me 」*
 │ │ 
-│ ├❒*Hai  : %name!*
-│ ├❒*limit : %limit Limit*
-│ ├❒*Role : %role*
-│ ├❒*Level: %level (%exp / %maxexp)* 
-│ └❒*Total Xp : %totalexp*
+│ ├❒ *Hai  : %name!*
+│ ├❒ *limit : %limit Limit*
+│ ├❒ *Role : %role*
+│ ├❒ *Level: %level (%exp / %maxexp)* 
+│ └❒ *Total Xp : %totalexp*
 │ 
 ├◪ *TIME ⏳*
-│ ├❒*Hari: %week %weton*
-│ ├❒*Tanggal : %date*
-│ └❒*Waktu: %time*
+│ ├❒ *Hari: %week %weton*
+│ ├❒ *Tanggal : %date*
+│ └❒ *Waktu: %time*
 │
 ├◪ *STATUS BOT*
-│ ├❒*Uptime: %uptime (%muptime)*
-│ ├❒*Database: %rtotalreg of %totalreg*
-│ └❒*Status: Jomblo ka hehe^^*
+│ ├❒ *Uptime: %uptime (%muptime)*
+│ ├❒ *Database: %rtotalreg of %totalreg*
+│ └❒ *Status: Jomblo ka hehe^^*
 │
 ├◪ *INFO OWNER BOT*
 ││
@@ -196,8 +196,8 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     if (teks == '404') {
       return conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
         "listMessage": {
-          "title": `${ucapan()}, ${name}`.trim(),
-          "description": "© Agbot",
+          "title": `${ucapan()}, ${name}. Berikut Menu Dari Ag Bot^^`.trim(),
+          "description": "\nJika button tidak terlihat ketik #allmenu untuk melihat semua pitur^^\n\n© Agbot",
           "buttonText": "Klik Disini",
           "listType": "SINGLE_SELECT",
           "sections": [
@@ -205,97 +205,97 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
               "rows": [
                 {
                   "title": `Semua Perintah`,
-                  "description": "",
+                  "description": "Untuk menampilkan semua Menu",
                   "rowId": `${_p}? all`
                 }, {
-                  "title": "Game",
-                  "description": "",
+                  "title": "Game Menu",
+                  "description": "Permainan",
                   "rowId": `${_p}? game`
 
                 }, {
-                  "title": "XP",
-                  "description": "",
+                  "title": "XP Menu",
+                  "description": "Leveling",
                   "rowId": `${_p}? xp`
 
                 }, {
-                  "title": "Stiker",
-                  "description": "",
+                  "title": "Stiker Menu",
+                  "description": "Untuk Membantu membuat Stiker",
                   "rowId": `${_p}? stiker`
                 }, {
-                  "title": "Kerang Ajaib",
-                  "description": "",
+                  "title": "Kerang Ajaib Menu",
+                  "description": "Kerang Ajaib kaya di film Spongbop",
                   "rowId": `${_p}? kerangajaib`
                 }, {
-                  "title": "Quotes",
-                  "description": "",
+                  "title": "Quotes Menu",
+                  "description": "Menu Kata Kata",
                   "rowId": `${_p}? quotes`
                 }, {
-                  "title": "Admin",
-                  "description": "",
+                  "title": "Admin Menu",
+                  "description": "Menu Khusus admin",
                   "rowId": `${_p}? admin`
                 }, {
-                  "title": "Grup",
-                  "description": "",
+                  "title": "Grup Menu",
+                  "description": "Menu buat di group",
                   "rowId": `${_p}? grup`
                 }, {
-                  "title": "Premium",
-                  "description": "",
+                  "title": "Premium Menu",
+                  "description": "Menu Khusus User Premium!",
                   "rowId": `${_p}? premium`
                 }, {
-                  "title": "Internet",
-                  "description": "",
+                  "title": "Internet Menu",
+                  "description": "Imternet menu",
                   "rowId": `${_p}? internet`
                 }, {
-                  "title": "Anonymous",
-                  "description": "",
+                  "title": "Anonymous Chat",
+                  "description": "Anonymous chat seperti bot di TELEGRAM",
                   "rowId": `${_p}? anonymous`
                 }, {
                   "title": "Nulis & Logo",
-                  "description": "",
+                  "description": "Menu Orang Males",
                   "rowId": `${_p}? nulis`
                 }, {
-                  "title": "Downloader",
-                  "description": "",
+                  "title": "Downloader Menu",
+                  "description": "Menu untuk Download",
                   "rowId": `${_p}? downloader`
                 }, {
-                  "title": "Tools",
-                  "description": "",
+                  "title": "Tools Menu",
+                  "description": "Alat",
                   "rowId": `${_p}? tools`
                 }, {
-                  "title": "Fun",
-                  "description": "",
+                  "title": "Fun Menu",
+                  "description": "Just For Fun^^",
                   "rowId": `${_p}? fun`
                 }, {
-                  "title": "Database",
-                  "description": "",
+                  "title": "Database Menu",
+                  "description": "Database",
                   "rowId": `${_p}? database`
                 }, {
                   "title": "Vote & Absen",
-                  "description": "",
+                  "description": "Kayak lagi sekolah broq",
                   "rowId": `${_p}? vote`
                 }, {
                   "title": "Al-Qur\'an",
-                  "description": "",
+                  "description": "Alquran Menu",
                   "rowId": `${_p}? quran`
                 }, {
                   "title": "Pengubah Suara",
-                  "description": "",
+                  "description": "Menu Ubah Suara",
                   "rowId": `${_p}? audio`
                 }, {
                   "title": "Jadi Bot",
-                  "description": "",
+                  "description": "Mau jadi bot kaya gini?",
                   "rowId": `${_p}? jadibot`
                 }, {
                   "title": "Info",
-                  "description": "",
+                  "description": "ingfo seputar bot",
                   "rowId": `${_p}? info`
                 }, {
                   "title": "Tanpa Kategori",
-                  "description": "",
+                  "description": "Untuk user premium Invite bot ke Group",
                   "rowId": `${_p}? tanpakategori`
                 }, {
-                  "title": "Owner",
-                  "description": "",
+                  "title": "Owner Menu",
+                  "description": "Menu Khusus Owner!",
                   "rowId": `${_p}? owner`
                 }
               ]
@@ -385,7 +385,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    await conn.send2ButtonLoc(m.chat, await (await fetch(fla + teks)).buffer(), text.trim(), 'made with ❤️ by Arya gilang', 'Pemilik Bot', `${_p}owner`, 'Donasi', `${_p}donasi`, m)
+    await conn.send2ButtonLoc(m.chat, await (await fetch(fla + teks)).buffer(), text.trim(), 'made with ❤️ by Arya gilang', 'Pemilik Bot', `${_p}owner`, 'Rules', `${_p}rules`, m)
   } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
     throw e
@@ -404,7 +404,7 @@ handler.admin = false
 handler.botAdmin = false
 
 handler.fail = null
-handler.exp = 3
+handler.exp = 5
 
 module.exports = handler
 
