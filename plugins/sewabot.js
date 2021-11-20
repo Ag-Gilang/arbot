@@ -2,8 +2,8 @@ let handler = async m => m.reply(`
 *「 LIST HARGA SEWA BOT 」*
 
 ❒ Sewa = _5k/grup (1 minggu)_
-❒ Sewa = _10k/grup (1 bulan)_
-❒ Sewa = _15k/grup (Permanent)_
+❒ Sewa = _7k/grup (1 bulan)_
+❒ Sewa = _10k/grup (Permanent)_
 ❒ Free = _24 jam Bot Masuk Ke Group Kalian Setelah Itu Bot Akan Keluar_
 
 ◪ *PEMBAYARAN BISA MELALUI*
@@ -15,14 +15,14 @@ let handler = async m => m.reply(`
 
 ◪ *KEUNTUNGAN SEWA BOT*
 
-❒ *Fitur Premium Terbuka*
-❒ *Limit UNLIMITED*
-❒ *Bisa Menyuruh Bot Buka/Tutup Group*
-❒ *Kick Orang*
-❒ *Add Orang*
-❒ *Anti Link On*
-❒ *Fitur Game Banyak Sepuas Nya Main*
-❒ *Bisa Memasukkan Bot Ke dalam Grup*
+❒ _Fitur Premium Terbuka_
+❒ _Limit UNLIMITED_
+❒ _Bisa Menyuruh Bot Buka/Tutup Group_
+❒ _Kick Orang_
+❒ _Add Orang_
+❒ _Anti Link On_
+❒ _Fitur Game Banyak Sepuas Nya Main_
+❒ _Bisa Memasukkan Bot Ke dalam Grup_
 
 ◪ *Jika Minat Hubungi owner*
 ◪ *Syarat gratis invite bot,Follow ig Owner*
