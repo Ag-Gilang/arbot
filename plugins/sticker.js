@@ -54,7 +54,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     // else throw `Gagal${m.isGroup ? ', balas gambarnya!' : ''}`
   }
 }
-handler.help = ['stiker ', 'stiker <url>']
+handler.help = ['stiker', 'stiker <url>']
 handler.tags = ['sticker']
 handler.command = /^s(tic?ker)?(gif)?(wm)?$/i
 
