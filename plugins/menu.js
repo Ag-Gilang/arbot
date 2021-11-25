@@ -20,7 +20,7 @@ const defaultMenu = {
 │ └❒ *Waktu: %time*
 │
 ├◪ *STATUS BOT*
-│ ├❒ *Uptime: %uptime (%muptime)*
+│ ├❒ *Uptime: %uptime*
 │ ├❒ *Database: %rtotalreg of %totalreg*
 │ └❒ *Status: Jomblo ka hehe^^*
 │
@@ -196,7 +196,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
     if (teks == '404') {
       return conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
         "listMessage": {
-          "title": `Hai ${ucapan()}, ${name}. Berikut Menu Yang tersedia Dari Ag Bot^^ \nJika button tidak terlihat ketik #allmenu untuk melihat semua pitur^^\n\n`.trim(),
+          "title": `Hai ${ucapan()}, ${name}. \n\nBerikut Menu Yang tersedia Dari Ag Bot. Jika button tidak terlihat ketik #allmenu untuk melihat semua pitur^^ `.trim(),
           "description": "© Agbot",
           "buttonText": "Klik Disini",
           "listType": "SINGLE_SELECT",
